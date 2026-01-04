@@ -1,0 +1,121 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.main-container {
+  background-color: burlywood;
+
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 3fr;
+
+  height: 100vh;
+  width: 100vw;
+}
+
+.header {
+  /* background-color: red; */
+
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-column-start: 2;
+}
+
+.header-upper {
+  background-color: aqua;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-column-end: 3;
+  grid-row-end: 2;
+}
+
+/* .header-search-icon{
+  border: 2px solid black;
+  height: 100px;
+  width: 100px;
+} */
+
+.search {
+  /* border: 2px solid black; */
+  height: 30px;
+  width: 30px;
+}
+
+.header-search-bar {
+  /* background-color: red; */
+  background-color: #dbdbdb;
+
+  /* border: 2px solid black; */
+  border-radius: 50px;
+  width: 600px;
+  height: 30px;
+
+  margin-left: -60px;
+}
+
+.notifications {
+  /* border: 2px solid black; */
+
+  height: 30px;
+  width: 30px;
+}
+
+.profile-picture {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+
+  margin-left: -50px;
+}
+
+.user-name {
+  margin-left: -50px;
+}
+
+/* .header-upper {
+  background-color: aqua;
+
+  display: flex;
+}
+
+.header-search {
+  background-color:cadetblue;
+
+
+}
+
+.header-search-bar{
+  height: 100px;
+  width: 100px;
+  border-radius: 2px solid black;
+}
+
+.header-lower {
+  background-color: azure;
+
+  grid-column-start: 1;
+} */
+
+.sidebar {
+  background-color: blue;
+
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
