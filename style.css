@@ -128,21 +128,90 @@
   justify-content: space-around;
 }
 
-.button-new, .button-upload, .button-share{
+.button-new,
+.button-upload,
+.button-share {
   height: 40px;
   width: 100px;
   border-radius: 100px;
   border: none;
 
-  background-color: #40B5AD;
+  background-color: #1992d4;
   color: white;
 }
 
 .sidebar {
-  background-color: blue;
+  background-color: #1992d4;
+
+  display: grid;
 
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 3;
+  grid-template-rows: 0.5fr 2fr 2.5fr;
+
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: white;
+
 }
+
+.dashboard {
+  /* border: 2px solid black; */
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  gap: 5px;
+
+  cursor: pointer;
+}
+
+.img-dashboard {
+  height: 40px;
+
+  margin-left: 10px;
+
+  filter: brightness(0) invert(1);
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: flex;
+  gap: 10px;
+
+  cursor: pointer;
+
+}
+
+.dashboard-options-1, .dashboard-options-2 {
+  /* border: 2px solid black; */
+
+  display: flex;
+  align-items: center;
+
+  margin-left: 10px;
+  padding-left: 10px;
+
+  line-height: 2.3;
+}
+
+.img-dashboard-options {
+  height: 30px;
+
+  filter: brightness(0) invert(1);
+
+  /* display: flex; */
+}
+
+.dashboard-options-2 {
+  /* border: 2px solid black; */
+
+  padding-bottom: 150px;
+}
+
