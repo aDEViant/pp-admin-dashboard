@@ -15,7 +15,7 @@
   background-color: burlywood;
 
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 0.5fr 2fr;
   grid-template-rows: 1fr 3fr;
 
   height: 100vh;
@@ -96,6 +96,9 @@
 
   grid-column-start: 1;
   grid-column-end: 3;
+
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .profile-picture-lower {
@@ -111,7 +114,7 @@
   width: 250px;
   /* border: 2px solid black; */
 
-  margin-left: -430px;
+  margin-left: -410px;
 
   line-height: 1.3;
 }
@@ -154,7 +157,6 @@
   font-size: 1.1rem;
   font-weight: bold;
   color: white;
-
 }
 
 .dashboard {
@@ -186,10 +188,10 @@ li {
   gap: 10px;
 
   cursor: pointer;
-
 }
 
-.dashboard-options-1, .dashboard-options-2 {
+.dashboard-options-1,
+.dashboard-options-2 {
   /* border: 2px solid black; */
 
   display: flex;
@@ -215,3 +217,97 @@ li {
   padding-bottom: 150px;
 }
 
+.main-content-container {
+  background-color: #dbdbdb;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 2fr;
+}
+
+.main-content-container-left-box {
+  /* background-color: aqua; */
+
+  border: 2px solid black;
+
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-column-end: 2;
+  grid-row-end: 3;
+
+  /* display: grid; */
+}
+
+.your-projects-title {
+  /* background-color: azure; */
+
+  /* grid-column-start: 1;
+  grid-row-start: 1;
+  grid-column-end: 1;
+  grid-row-end: 2; */
+
+  height: 8vh;
+
+  padding-bottom: 0.5vh;
+  padding-left: 2vh;
+
+  display: flex;
+  align-items: flex-end;
+
+  font-size: large;
+}
+
+.card {
+  border: 2px solid black;
+
+  height: 200px;
+  width: 350px;
+  border-radius: 10px;
+
+  overflow: hidden;
+
+  display: flex;
+}
+
+.your-projects-cards-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 20px;
+}
+
+.card-left-part {
+  background-color: #f1b11e;
+
+  /* height: 100%; */
+  width: 3%;
+}
+
+.card-right-part{
+  background-color: white;
+
+  width: 100%;
+  padding: 20px 20px;
+
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+}
+
+.card-details{
+  /* border: 2px solid black; */
+}
+
+.card-options{
+  /* border: 2px solid black; */
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+
+  gap: 20px;
+}
+
+.img-card-options{
+  height: 25px;
+  cursor: pointer;
+}
