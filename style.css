@@ -222,13 +222,13 @@ li {
 
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: 1fr 2fr;
+  grid-template-rows: 70fr 2fr;
 }
 
 .main-content-container-left-box {
   /* background-color: aqua; */
 
-  border: 2px solid black;
+  /* border: 2px solid black; */
 
   grid-column-start: 1;
   grid-row-start: 1;
@@ -269,7 +269,7 @@ li {
   display: flex;
 }
 
-.your-projects-cards-container{
+.your-projects-cards-container {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
@@ -283,7 +283,7 @@ li {
   width: 3%;
 }
 
-.card-right-part{
+.card-right-part {
   background-color: white;
 
   width: 100%;
@@ -293,11 +293,11 @@ li {
   grid-template-rows: 2fr 1fr;
 }
 
-.card-details{
+.card-details {
   /* border: 2px solid black; */
 }
 
-.card-options{
+.card-options {
   /* border: 2px solid black; */
 
   display: flex;
@@ -307,7 +307,99 @@ li {
   gap: 20px;
 }
 
-.img-card-options{
+.img-card-options {
   height: 25px;
   cursor: pointer;
+}
+
+.main-content-container-right-box {
+  border: 2px solid black;
+  grid-template-rows: 20;
+}
+
+.announcements-container {
+  /* border: 2px solid black; */
+
+  margin-top: 9%;
+
+  height: 50%;
+}
+
+.announement-title {
+  /* border: 2px solid black; */
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.announcements-box {
+  margin-top: 4%;
+  padding: 20px;
+
+  /* border: 2px solid black; */
+  border-radius: 10px;
+
+  background-color: white;
+  height: 80%;
+
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.separator {
+  border: 2px solid #dbdbdb;
+  width: 100%;
+
+  margin-top: 5%;
+}
+
+.trending-container {
+  border: 2px solid black;
+
+  height: 50%;
+
+  margin-top: 10%;
+}
+
+.trending-title {
+  border: 2px solid black;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.trending-box {
+  border: 2px solid black;
+  border-radius: 10px;
+
+  background-color: white;
+
+  height: 100%;
+
+  margin-top: 5%;
+}
+
+.trending-box-tegan {
+  border: 2px solid black;
+  width: 75%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  /* flex-direction: column; */
+
+  margin-left: 12%;
+}
+
+.trending-box-photo {
+  /* border: 2px solid black; */
+  /* border-radius: 50%; */
+
+  height: 50px;
+  width: 50px;
+}
+
+#trending-profile-pictures {
+  height: 50px;
+  width: 50px;
+
+  border-radius: 50%;
 }
